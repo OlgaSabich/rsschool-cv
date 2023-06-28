@@ -1,6 +1,59 @@
 body {
-  max-width: 1200px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Oswald", sans-serif;
+  color: aliceblue;
 }
-.main-wrapper {
-  background-color: aqua;
+.body-wrapper {
+  max-width: 1222px;
+  margin: 0 auto;
+  background-color: rgba(14, 9, 5, 0.822);
+}
+
+/* Header block */
+
+.nav {
+  display: flex;
+  justify-content: right;
+  color: aliceblue;
+  margin-right: 25px;
+}
+
+.nav__link {
+  margin-left: 15px;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+/* Main block */
+
+.introduction-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.introduction-photo {
+  width: 800px;
+  -webkit-filter: grayscale(70%);
+  filter: grayscale(70%);
+}
+
+.introduction-block {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-right: 25px;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+.introduction-block p {
+  text-align: right;
 }
