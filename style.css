@@ -1,94 +1,63 @@
-body {
+html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Oswald", sans-serif;
-  color: aliceblue;
+  color: black;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .body-wrapper {
-  max-width: 1600px;
   margin: 0 auto;
-  background-color: rgba(49, 36, 28, 0.719);
+  max-width: 1440px;
+  background-color: #f5f0e6;
   overflow: hidden;
 }
 
 .content-wrapper {
-  max-width: 1500px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding-left: 50px;
-  padding-right: 50px;
+}
+
+a,
+a:visited,
+a:active,
+a:focus {
+  outline: none;
+  text-decoration: none;
+  color: black;
+  transition: 0.25s linear;
+}
+
+a:hover {
+  color: rgba(0, 0, 0, 0.664);
+  transition: 0.25s linear;
 }
 
 /* Header block */
 
-.nav {
+.header-wrapper {
   display: flex;
-  justify-content: right;
-  color: aliceblue;
-
-  margin-top: 40px;
-}
-
-.nav__link {
-  margin-left: 15px;
-}
-
-.nav__link:link,
-.nav__link:visited {
-  color: aliceblue;
-  text-decoration: none;
-}
-
-/* Main block */
-
-.introduction-wrapper {
-  display: flex;
+  align-items: center;
   justify-content: space-between;
-  min-height: 900px;
 }
 
-.introduction-left-block {
-  width: 30%;
-  height: 100%;
+.header_logo__img {
+  max-height: 72px;
 }
 
-.introduction-photo {
-  max-height: 900px;
-  -webkit-filter: grayscale(60%);
-  filter: grayscale(60%);
-  margin-left: -420px;
-  z-index: 0;
-}
-
-.introduction-right-block {
+.header_nav__list {
   display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  z-index: 1;
 }
 
-h1 {
-  font-size: 150px;
+.header_nav__list-item {
+  margin-right: 5px;
 }
 
-.introduction-right-block p {
-  text-align: right;
-  max-width: 800px;
-}
-
-/*
-@media (min-device-width: 332px) and (max-device-width: 568px) and (orientation: portrait) {
-  body {
-    font-size: 10px;
-  }
-  .introduction-photo {
-    max-width: 350px;
-    margin-left: -150px;
-  }
-}*/
-
-.education-wrapper {
-  height: 100px;
-  background-color: aliceblue;
-  color: rgba(49, 36, 28, 0.719);
+.header_nav__list-item:last-child {
+  margin-right: 0px;
 }
