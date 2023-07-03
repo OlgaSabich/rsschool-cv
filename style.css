@@ -61,3 +61,52 @@ a:hover {
 .header_nav__list-item:last-child {
   margin-right: 0px;
 }
+
+/* End of the Header block */
+
+/* Main block */
+
+.first-section {
+  display: flex;
+}
+
+.first-section_left-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 50%;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 150px;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.first-section_left-block__paragraph {
+  max-width: 500px;
+  text-align: end;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.first-section_right-block {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.first-section_right-block h2 {
+  position: absolute;
+  margin-left: 20%;
+}
+
+.first-section_right-block__photo {
+  mix-blend-mode: luminosity;
+}
