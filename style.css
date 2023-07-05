@@ -76,6 +76,7 @@ a:hover {
   justify-content: flex-end;
   align-items: flex-end;
   width: 50%;
+  margin-right: 2px;
 }
 
 h1 {
@@ -100,6 +101,7 @@ h2 {
   display: flex;
   align-items: center;
   width: 50%;
+  margin-left: 2px;
 }
 
 .first-section_right-block h2 {
@@ -109,4 +111,102 @@ h2 {
 
 .first-section_right-block__photo {
   mix-blend-mode: luminosity;
+  height: 100%;
 }
+
+/*-----------*/
+
+.second-section_block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.second-section_object {
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second-section_skills__logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-logo {
+  max-height: 89px;
+  mix-blend-mode: darken;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.bntu-logo {
+  max-height: 176px;
+  mix-blend-mode: darken;
+}
+
+.second-section_object h2 {
+  margin-bottom: 25px;
+}
+
+li {
+  line-height: 35px;
+}
+
+.second-section_object code {
+  padding: 8px;
+  border: 1.5px solid rgba(0, 0, 0, 0.664);
+  border-radius: 20px;
+}
+
+.second-section_object ul {
+  text-align: center;
+}
+
+.language_container {
+  width: 300px;
+  background: #ccc;
+  margin-bottom: 15px;
+}
+
+.language_skills {
+  padding: 5px 5px;
+  color: #f5f0e6;
+  background-color: rgba(0, 0, 0, 0.664);
+}
+
+.russian {
+  width: 90%;
+}
+
+.belarussian {
+  width: 80%;
+}
+
+.ukrainian {
+  width: 50%;
+}
+
+.english {
+  width: 40%;
+}
+
+/* End of the Main block */
+
+/* Footer block */
+
+.footer-block {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 15px 0;
+  align-items: center;
+}
+
+.footer-block a img {
+  max-height: 50px;
+}
+
+/* End of the Footer block */
