@@ -1,94 +1,212 @@
-body {
+html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Oswald", sans-serif;
-  color: aliceblue;
+  color: black;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .body-wrapper {
-  max-width: 1600px;
   margin: 0 auto;
-  background-color: rgba(49, 36, 28, 0.719);
+  max-width: 1440px;
+  background-color: #f5f0e6;
   overflow: hidden;
 }
 
 .content-wrapper {
-  max-width: 1500px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding-left: 50px;
-  padding-right: 50px;
+}
+
+a,
+a:visited,
+a:active,
+a:focus {
+  outline: none;
+  text-decoration: none;
+  color: black;
+  transition: 0.25s linear;
+}
+
+a:hover {
+  color: rgba(0, 0, 0, 0.664);
+  transition: 0.25s linear;
 }
 
 /* Header block */
 
-.nav {
+.header-wrapper {
   display: flex;
-  justify-content: right;
-  color: aliceblue;
-
-  margin-top: 40px;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.nav__link {
-  margin-left: 15px;
+.header_logo__img {
+  max-height: 72px;
 }
 
-.nav__link:link,
-.nav__link:visited {
-  color: aliceblue;
-  text-decoration: none;
+.header_nav__list {
+  display: flex;
 }
+
+.header_nav__list-item {
+  margin-right: 5px;
+}
+
+.header_nav__list-item:last-child {
+  margin-right: 0px;
+}
+
+/* End of the Header block */
 
 /* Main block */
 
-.introduction-wrapper {
+.first-section {
   display: flex;
-  justify-content: space-between;
-  min-height: 900px;
 }
 
-.introduction-left-block {
-  width: 30%;
-  height: 100%;
-}
-
-.introduction-photo {
-  max-height: 900px;
-  -webkit-filter: grayscale(60%);
-  filter: grayscale(60%);
-  margin-left: -420px;
-  z-index: 0;
-}
-
-.introduction-right-block {
+.first-section_left-block {
   display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: flex-end;
-  z-index: 1;
+  width: 50%;
+  margin-right: 2px;
 }
 
 h1 {
+  text-transform: uppercase;
   font-size: 150px;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
 }
 
-.introduction-right-block p {
-  text-align: right;
-  max-width: 800px;
+h2 {
+  font-size: 25px;
 }
 
-/*
-@media (min-device-width: 332px) and (max-device-width: 568px) and (orientation: portrait) {
-  body {
-    font-size: 10px;
-  }
-  .introduction-photo {
-    max-width: 350px;
-    margin-left: -150px;
-  }
-}*/
-
-.education-wrapper {
-  height: 100px;
-  background-color: aliceblue;
-  color: rgba(49, 36, 28, 0.719);
+.first-section_left-block__paragraph {
+  max-width: 500px;
+  text-align: end;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
+
+.first-section_right-block {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-left: 2px;
+}
+
+.first-section_right-block h2 {
+  position: absolute;
+  margin-left: 20%;
+}
+
+.first-section_right-block__photo {
+  mix-blend-mode: luminosity;
+  height: 100%;
+}
+
+/*-----------*/
+
+.second-section_block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.second-section_object {
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second-section_skills__logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-logo {
+  max-height: 89px;
+  mix-blend-mode: darken;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.bntu-logo {
+  max-height: 176px;
+  mix-blend-mode: darken;
+}
+
+.second-section_object h2 {
+  margin-bottom: 25px;
+}
+
+li {
+  line-height: 35px;
+}
+
+.second-section_object code {
+  padding: 8px;
+  border: 1.5px solid rgba(0, 0, 0, 0.664);
+  border-radius: 20px;
+}
+
+.second-section_object ul {
+  text-align: center;
+}
+
+.language_container {
+  width: 300px;
+  background: #ccc;
+  margin-bottom: 15px;
+}
+
+.language_skills {
+  padding: 5px 5px;
+  color: #f5f0e6;
+  background-color: rgba(0, 0, 0, 0.664);
+}
+
+.russian {
+  width: 90%;
+}
+
+.belarussian {
+  width: 80%;
+}
+
+.ukrainian {
+  width: 50%;
+}
+
+.english {
+  width: 40%;
+}
+
+/* End of the Main block */
+
+/* Footer block */
+
+.footer-block {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 15px 0;
+  align-items: center;
+}
+
+.footer-block a img {
+  max-height: 50px;
+}
+
+/* End of the Footer block */

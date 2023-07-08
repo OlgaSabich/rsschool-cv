@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
-    <link rel="icon" href="./img/rs_logo.svg" type="image/x-icon" >
-    <link rel="stylesheet" href="reset.css" >
-    <link rel="stylesheet" href="style.css" >
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link rel="icon" href="./img/rs_logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap"
       rel="stylesheet"
-    >
+    />
   </head>
   <body>
     <div class="body-wrapper">
-      <div class="content-wrapper">
-        <header>
-          <nav>
-            <ul class="nav">
-              <li class="nav__list">
-                <a href="#education" class="nav__link">Education</a>
-              </li>
-              <li class="nav__list">
-                <a href="#skills" class="nav__link">Skills</a>
-              </li>
-              <li class="nav__list">
-                <a href="#contacts" class="nav__link">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <main>
-          <section class="introduction-wrapper">
-            <div class="introduction-left-block">
-              <img class="introduction-photo" alt="photo" src="./img/me.png" >
+      <header>
+        <div class="content-wrapper">
+          <div class="header-wrapper">
+            <div class="header_logo">
+              <a href="https://rs.school/" class="header_logo__link"
+                ><img
+                  class="header_logo__img"
+                  src="./img/rs_logo.svg"
+                  alt="logo"
+              /></a>
             </div>
-            <div class="introduction-right-block">
-              <div>
-                <h1>I'M VOLHA</h1>
-                <p>Front-end developer</p>
-              </div>
-              <p>
+            <nav class="header_nav">
+              <ul class="header_nav__list">
+                <li class="header_nav__list-item"><a href="#menu">Menu</a></li>
+                <li class="header_nav__list-item">
+                  <a href="#education">Education</a>
+                </li>
+                <li class="header_nav__list-item">
+                  <a href="#contacts">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="content-wrapper">
+          <section class="first-section" id="menu">
+            <div class="first-section_left-block">
+              <h1>I'm Volha</h1>
+              <p class="first-section_left-block__paragraph">
                 Hello, world. I am a novice frontend developer. At the moment I
                 work in a large company that is engaged in retail trade as a
                 marketer. I dream of changing my job to one that I like more
@@ -56,11 +60,147 @@
                 voluptatibus?
               </p>
             </div>
+            <div class="first-section_right-block">
+              <img
+                class="first-section_right-block__photo"
+                src="./img/me.png"
+                alt="phono"
+              />
+              <h2>Front-end developer</h2>
+            </div>
           </section>
-          <section class="education-wrapper">Education</section>
-        </main>
-        <footer></footer>
-      </div>
+          <section class="second-section" id="education">
+            <div class="second-section_block">
+              <div class="second-section_object">
+                <h2>Skills</h2>
+                <div class="second-section_skills__logo">
+                  <img
+                    src="./img/js.png"
+                    alt="js"
+                    class="skills-logo"
+                    title="Java Script"
+                  />
+                  <img
+                    src="./img/github.png"
+                    alt="github"
+                    class="skills-logo"
+                    title="GitHub"
+                  />
+                  <img
+                    src="./img/excel.png"
+                    alt="ms_excel"
+                    class="skills-logo"
+                    title="MS Excel"
+                  />
+                  <img
+                    src="./img/html.png"
+                    alt="html"
+                    class="skills-logo"
+                    title="HTML"
+                  />
+                  <img
+                    src="./img/autocad.png"
+                    alt="autocad"
+                    class="skills-logo"
+                    title="AutoCad"
+                  />
+                  <img
+                    src="./img/css.png"
+                    alt="css"
+                    class="skills-logo"
+                    title="CSS"
+                  />
+                </div>
+              </div>
+              <div class="second-section_object">
+                <h2>My projects</h2>
+                <ul>
+                  <li>
+                    <a href="https://olgasabich.github.io/rsschool-cv-old/"
+                      >CV (RS school)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://rolling-scopes-school.github.io/olgasabich-JSFEPRESCHOOL2022Q4/plants/"
+                      >Plants (RS school)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/rolling-scopes-school/olgasabich-JSFEPRESCHOOL2022Q2/tree/gh-pages"
+                      >Travel (RS school)</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="second-section_object">
+                <h2>Education</h2>
+                <div class="second-section_education__logo">
+                  <a href="https://fmmp.bntu.by/"
+                    ><img src="./img/fmme.png" alt="fmme" class="fmme-logo"
+                  /></a>
+                  <a href="https://bntu.by/"
+                    ><img src="./img/bntu.png" alt="bntu" class="bntu-logo"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="second-section_block">
+              <div class="second-section_object">
+                <h2>Languages</h2>
+                <div class="language_container">
+                  <div class="language_skills russian">Russian</div>
+                </div>
+                <div class="language_container">
+                  <div class="language_skills belarussian">Belarussian</div>
+                </div>
+                <div class="language_container">
+                  <div class="language_skills ukrainian">Ukrainian</div>
+                </div>
+                <div class="language_container">
+                  <div class="language_skills english">English</div>
+                </div>
+              </div>
+              <div class="second-section_object">
+                <h2>Contacts</h2>
+                <ul>
+                  <li>Minsk, Belarus</li>
+                  <li>Email: olgasabich@mail.ru</li>
+                  <li>GutHub: OlgaSabich</li>
+                  <li>Telegram: ssabitch</li>
+                  <li>Discord: chmonya3261</li>
+                </ul>
+              </div>
+              <div class="second-section_object">
+                <h2>Code example</h2>
+                <code>
+                  const quarterOf = (month) => { <br />
+                  &nbsp if (month <= 3) {return (1);}{ <br />
+                  &nbsp else if (month <= 6) {return(2);} <br />
+                  &nbsp else if (month <= 9) {return(3);} <br />
+                  &nbsp else if (month <= 12) {return(4);} <br />
+                  &nbsp else {return('error');} <br />
+                  }
+                </code>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="content-wrapper">
+          <div class="footer-block">
+            <a href="https://github.com/OlgaSabich"
+              ><img src="./img/github.png" alt="github"
+            /></a>
+            <p>Ⓒ 2023</p>
+            <a href="https://rs.school/">
+              <img src="./img/rs_logo.svg" alt="rs"
+            /></a>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

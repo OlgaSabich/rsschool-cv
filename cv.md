@@ -4,7 +4,7 @@
 
 ### Junior Frontend Developer
 
-![photo](img/me.jpg)
+![photo](./img/me.png)
 
 > ### Contact information:
 
