@@ -104,9 +104,11 @@ h2 {
   margin-left: 2px;
 }
 
-.first-section_right-block h2 {
-  position: absolute;
-  margin-left: 20%;
+@media (max-width: 1195px) {
+  .first-section_right-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .first-section_right-block__photo {
@@ -120,7 +122,13 @@ h2 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 100px;
+}
+
+@media (max-width: 781px) {
+  .second-section_block {
+    justify-content: center;
+  }
 }
 
 .second-section_object {
@@ -201,12 +209,13 @@ li {
 .footer-block {
   display: flex;
   justify-content: space-between;
-  margin: 50px 0 15px 0;
+  margin: 100px 0 15px 0;
   align-items: center;
 }
 
 .footer-block a img {
   max-height: 50px;
+  color: black;
 }
 
 /* End of the Footer block */
